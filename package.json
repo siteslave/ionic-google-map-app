@@ -26,7 +26,6 @@
     "uk.co.workingedge.phonegap.plugin.launchnavigator"
   ],
   "cordovaPlatforms": [
-    "ios",
     "android"
   ]
 }
