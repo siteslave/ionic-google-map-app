@@ -10,7 +10,7 @@ angular.module('starter.Map', [])
       $scope.launchNavigator = function () {
         var destination = [$scope.cLat, $scope.cLng];
         var start = [$scope.lat, $scope.lng];
-        $cordovaLaunchNavigator.navigate(destination, start).then(function () {
+        $cordovaLaunchNavigator.navigate(start, destination).then(function () {
           console.log("Navigator launched");
         }, function (err) {
           console.error(err);
@@ -18,6 +18,7 @@ angular.module('starter.Map', [])
       };
 
       var apiKey = false;
+
       $scope.map = null;
       $scope.markers = [];
       $scope.currentLatLng = null;
